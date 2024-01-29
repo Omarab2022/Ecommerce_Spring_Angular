@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="grid grid-cols-12 gap-3">
+      <div class="col-span-3 lg:col-span-1">
+        <div class="w-[3rem] h-[3rem]">
+              <img class="w-full h-full rounded-full" src="{{review.image}}" alt="">
+        </div>
+      </div>
+      <div class="col-span-6 lg:col-span-9">
+        <div class="space-y-2">
+          <div class="">
+            <p class="font-semibold text-lg">{{review.name}}</p>
+            <p class="opacity-70">{{review.date}}</p>
+          </div>
+          <div>
+            <div class="">
+              <app-star-rating/>
+           
+            </div>
+          </div>
+          <p>
+            {{review.comment}}
+          </p>
+        </div>
+      </div>
+      <div class="col-span-1 flex"></div>
+    </div>
+  </div>

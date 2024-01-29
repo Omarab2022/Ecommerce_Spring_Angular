@@ -1,0 +1,19 @@
+<div  class='productCard w-[17rem] m-3 transition-all cursor-pointer '>
+    <div class='h-[24rem]' >
+        <img style="border-radius: 20px;" class='h-full w-full object-cover object-left-top' [src]='product.imageUrl' alt="" />
+    </div>
+    <div class='textPart  p-3 bg-[#0b0b0b] rounded-b-md'>
+        <div>
+            <p >{{product.brand}}</p>
+            <p  class="opacity-80">{{product.title}}</p>
+            <p class="text-gray-400">{{product.color}}</p>
+        </div>
+        
+        <div class='flex space-x-2 items-center'>
+            <p class="font-bold text-green-400">${{ product.discountedPrice }}</p>
+           <p class="text-red-400 line-through">${{ product.price }}</p>
+           <p class="text-amber-700 font-semibold">{{ product.discount }}</p>
+        </div>
+        
+    </div>
+   </div>
